@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directory
+node_modules
+
+# Build directory
+dist
+
+# Coverage directory
+coverage
+
+# IDE / Editor
+.idea
+
+# macOS
+.DS_Store
+
+# Local env files
+.env
+.env.local
+.env.*.local
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
