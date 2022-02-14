@@ -76,4 +76,4 @@ jobs:
 
     steps:
       - name: echo github information
-        run: echo ${{ fromJSON(github) }}
+        run: echo ${{ toJSON(github) }}
