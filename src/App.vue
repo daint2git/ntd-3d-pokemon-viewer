@@ -15,7 +15,7 @@ import HelloWorld from '@/components/HelloWorld.vue';
       <p class="text-slate-500">You have a new message!</p>
     </div>
   </div>
-  <hello-world msg="Hello Vue 3 + TypeScript + Vite" :xxx="123" />
+  <hello-world msg="Hello Vue 3 + TypeScript 4 + Vite 2" :xxx="123" />
 </template>
 
 <style>
