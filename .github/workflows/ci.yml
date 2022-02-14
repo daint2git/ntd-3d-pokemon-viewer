@@ -6,11 +6,13 @@ on:
       - main
     paths-ignore:
       - '**.md'
+      - '**.yml'
   pull_request:
     branches:
       - '**'
     paths-ignore:
       - '**.md'
+      - '**.yml'
 
 env:
   PRIMARY_NODE_VERSION: 14
@@ -69,9 +71,9 @@ jobs:
         run: yarn build
 
   print-information:
-    if: github.ref == 'refs/heads/main'
+    if: ${{ github.ref }} == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
       - name: echo github information
-        run: echo ${{fromJSON(github)}}
+        run: echo ${{ fromJSON(github) }}

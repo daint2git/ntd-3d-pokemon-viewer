@@ -46,4 +46,5 @@ updates:
       - dependency-name: "typescript"
       - dependency-name: "prettier"          
       - dependency-name: "*"
+        update-types:
           - "version-update:semver-major"
