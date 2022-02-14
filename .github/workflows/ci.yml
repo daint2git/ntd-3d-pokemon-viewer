@@ -70,10 +70,9 @@ jobs:
       - name: Build
         run: yarn build
 
-  print-information:
-    if: ${{ github.ref }} == 'refs/heads/main'
+  print-pr-information:
     runs-on: ubuntu-latest
 
     steps:
-      - name: echo github information
-        run: echo ${{ toJSON(github) }}
+      - name: echo github pr information
+        run: echo ${{ github.event.pull_request }}
