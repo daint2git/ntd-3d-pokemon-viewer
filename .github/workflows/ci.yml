@@ -70,10 +70,10 @@ jobs:
       - name: Build
         run: yarn build
 
-  print-pr-information:
+  print-information:
     runs-on: ubuntu-latest
 
     steps:
-      - name: echo github pr information
+      - name: echo github information
         # run: echo ${{ toJson(github) }}
-        run: echo "💡 The ${{ fromJson(github.pull_request) }} repository has been cloned to the runner."
+        run: echo "💡 The ${{ fromJson(github) }} repository has been cloned to the runner."
