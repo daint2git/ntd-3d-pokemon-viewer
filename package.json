@@ -18,7 +18,7 @@
     "prepare": "is-ci || husky install"
   },
   "dependencies": {
-    "vue": "^3.2.38"
+    "vue": "^3.2.39"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.3.0",
